@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Language Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Discussion Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#topics">Topics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="topics">
+            <h2>Forum Topics</h2>
+            <div class="topic-list">
+                <div class="topic">
+                    <h3>Spanish Grammar Questions</h3>
+                    <button onclick="viewTopic(1)">View Discussion</button>
+                </div>
+                <div class="topic">
+                    <h3>French Pronunciation Tips</h3>
+                    <button onclick="viewTopic(2)">View Discussion</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="create-topic">
+            <h2>Create New Topic</h2>
+            <form onsubmit="createTopic(event)">
+                <input type="text" id="topicTitle" placeholder="Topic Title" required>
+                <textarea id="topicContent" placeholder="Write your content here..." required></textarea>
+                <button type="submit">Post Topic</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Language Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

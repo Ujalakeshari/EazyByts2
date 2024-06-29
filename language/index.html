@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Language Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#exercises">Exercises</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to Your Language Journey!</h2>
+            <p>Explore, learn, and practice with our diverse language courses.</p>
+        </section>
+
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course-list">
+                <div class="course">
+                    <img src="imgl1.jpg" alt="Spanish for Beginners">
+                    <h3>Spanish for Beginners</h3>
+                    <p>Learn the basics of Spanish with vocabulary, grammar, and pronunciation.</p>
+                    <button onclick="enroll(1)">Enroll</button>
+                </div>
+                <div class="course">
+                    <img src="imgl2.jpg" alt="French Intermediate">
+                    <h3>French Intermediate</h3>
+                    <p>Enhance your French skills with intermediate grammar and conversation.</p>
+                    <button onclick="enroll(2)">Enroll</button>
+                </div>
+                <div class="course">
+                    <img src="imgl3.jpg" alt="German Basics">
+                    <h3>German Basics</h3>
+                    <p>Start your German journey with basic vocabulary and grammar.</p>
+                    <button onclick="enroll(3)">Enroll</button>
+                </div>
+                <div class="course">
+                    <img src="imgl4.jpg" alt="Korean for Beginners">
+                    <h3>Korean for Beginners</h3>
+                    <p>Learn the basics of the Korean language and Hangul script.</p>
+                    <button onclick="enroll(4)">Enroll</button>
+                </div>
+                <div class="course">
+                    <img src="imgl5.jpg" alt="English Advanced">
+                    <h3>English Advanced</h3>
+                    <p>Master advanced English grammar, vocabulary, and writing skills.</p>
+                    <button onclick="enroll(5)">Enroll</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercises">
+            <h2>Interactive Exercises</h2>
+            <div class="exercise-list">
+                <div class="exercise">
+                    <h3>Vocabulary Quiz</h3>
+                    <p>Test your vocabulary knowledge with our quizzes.</p>
+                    <button onclick="startExercise('vocabulary')">Start</button>
+                </div>
+                <div class="exercise">
+                    <h3>Grammar Practice</h3>
+                    <p>Improve your grammar skills with interactive exercises.</p>
+                    <button onclick="startExercise('grammar')">Start</button>
+                </div>
+                <div class="exercise">
+                    <h3>Pronunciation Practice</h3>
+                    <p>Practice your pronunciation with speech recognition.</p>
+                    <button onclick="startExercise('pronunciation')">Start</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="forum">
+            <h2>Discussion Forum</h2>
+            <div class="forum">
+                <p>Join discussions with fellow learners and instructors.</p>
+                <button onclick="openForum()">Go to Forum</button>
+            </div>
+        </section>
+
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <p>Track your progress, achievements, and enrolled courses.</p>
+            <button onclick="viewProfile()">View Profile</button>
+        </section>
+
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <p>Compete with others and see who’s at the top!</p>
+            <button onclick="viewLeaderboard()">View Leaderboard</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Language Learning Platform. All rights reserved.</p>
+        <p>Contact us at: support@languagelearning.com</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
